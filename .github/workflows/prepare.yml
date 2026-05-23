@@ -1,0 +1,36 @@
+name: Prepare Clips
+
+on:
+  schedule:
+    - cron: '20 18 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg
+        run: sudo apt update && sudo apt install ffmpeg -y
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create Credentials File
+        run: echo '${{ secrets.GDRIVE_CREDENTIALS }}' > credentials.json
+
+      - name: Run Prepare Script
+        env:
+          MAIN_FOLDER_ID: ${{ secrets.MAIN_FOLDER_ID }}
+          READY_FOLDER_ID: ${{ secrets.READY_FOLDER_ID }}
+
+        run: python prepare.py
