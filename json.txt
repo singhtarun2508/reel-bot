@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "access_token": "EAAV9laHuiy0BRpWCqWghHbZAyG1qIQkeIo0b2g4Gb3UJZAQtzCgaOu8dUV3fyar3ZAcexNZAEZCEuCG0p9a1L836NBMsBUdUZBuZCIWKa9JZCJeg3dOjRRNJt2GwVstzWClN3bpxov6NhO3NcIPE9ZA3VZBNNZBRZBNeLzmZB0ZAXzRAPCTZBtoZCNUjti0KaWkvC9lIYjhj45kDhfBwF5ZBCMc2t7kHalxalZCx7phmqHClL7LngZD",
+      "category": "TV programme",
+      "category_list": [
+        {
+          "id": "1400",
+          "name": "TV programme"
+        }
+      ],
+      "name": "Classic first episodes",
+      "id": "1037551806118268",
+      "tasks": [
+        "ADVERTISE",
+        "ANALYZE",
+        "CREATE_CONTENT",
+        "MESSAGING",
+        "MODERATE",
+        "MANAGE"
+      ]
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "QVFIU2RtbmU4OXYtWGN2QlNsSkoyQVEyRGh4WUVycmxEbUtnZAG81RXBKbk5rd0VqNmFhcHZAvQV81LVV2Q3lUdng5VlFYUF9ma0MwdzF2TFlfUVVQTEhHbUd3",
+      "after": "QVFIU2RtbmU4OXYtWGN2QlNsSkoyQVEyRGh4WUVycmxEbUtnZAG81RXBKbk5rd0VqNmFhcHZAvQV81LVV2Q3lUdng5VlFYUF9ma0MwdzF2TFlfUVVQTEhHbUd3"
+    }
+  }
+}
